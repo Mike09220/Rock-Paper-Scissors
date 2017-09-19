@@ -69,8 +69,10 @@ public class Button {  //class for buttons
         fill(0);
         text(buttonText, xPosition+(buttonWidth/2), yPosition+(buttonHeight/2));
         
+        cursor(HAND);
+        
       }
-      
+         
   }
   
   void displayRounded(){ // display class for the buttons with different rounded corners
@@ -96,8 +98,10 @@ public class Button {  //class for buttons
         textSize(buttonTextSize);
         fill(0);
         text(buttonText, xPosition+(buttonWidth/2), yPosition+(buttonHeight/2));
+        cursor(HAND);
         
       }
+      
       
   }
     

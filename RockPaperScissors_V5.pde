@@ -49,6 +49,8 @@ void draw(){
   
   background(#246D5F);
   
+  cursor(ARROW);
+  
   
   
   if (mainMenu == true && singlePlayerMode == false && multiPlayerMode == false){
