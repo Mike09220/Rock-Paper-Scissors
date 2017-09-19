@@ -5,9 +5,10 @@ public class Button {  //class for buttons
   private  int buttonWidth;
   private  int buttonHeight;
   private  color buttonFill;
+  private  color hoverFill;
   private  String buttonText;
   
-  Button (int newX, int newY, int newWidth, int newHeight, color newFill, String newText){  //constructor for class
+  Button (int newX, int newY, int newWidth, int newHeight, color newFill, String newText, color newHover){  //constructor for class
     
   xPosition = newX;   //variables for class
   yPosition = newY;
@@ -15,8 +16,7 @@ public class Button {  //class for buttons
   buttonHeight = newHeight;
   buttonFill = newFill;
   buttonText = newText;
-  
-
+  hoverFill = newHover;
   
   }
   
@@ -36,7 +36,7 @@ public class Button {  //class for buttons
         
         stroke(0);
         strokeWeight(2);
-        fill(255, 25, 50);
+        fill(hoverFill);
         rect(xPosition, yPosition, buttonWidth, buttonHeight);
         
         textAlign(CENTER, CENTER);
